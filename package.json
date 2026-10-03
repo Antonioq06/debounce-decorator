@@ -1,0 +1,17 @@
+{
+  "name": "debounce-decorator",
+  "version": "0.1.0",
+  "description": "Wraps a function so that it executes only after a configured interval has elapsed since the last invocation, cancelling any pending execution on each new call.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {}
+}
