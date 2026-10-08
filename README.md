@@ -51,3 +51,10 @@ dependencies.
 - `flush()` when idle returns `undefined` and does nothing else.
 - `cancel()` is idempotent.
 - The wrapper preserves `this`, so it works as a method decorator.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
